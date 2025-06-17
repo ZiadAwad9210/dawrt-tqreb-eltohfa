@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>صفحة الفيديو الاحترافية</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #1a1a1a;
+      color: #e0e0e0;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #213A57 0%, #14919B 100%);
+      color: #f5f5f5;
+      padding: 1.5rem 0;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    .header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      border: 1px solid #333;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .container > p {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .container > p a {
+      color: #7f9cb5;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .container > p a:hover {
+      color: #a8c6e0;
+    }
+
+    .links-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+      gap: 1rem;
+    }
+
+    .link-box {
+      background: #2d2d2d;
+      padding: 1.5rem;
+      border-radius: 8px;
+      width: 30%;
+      min-width: 250px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: 1px solid #3a3a3a;
+    }
+
+    .link-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      background: #353535;
+    }
+
+    .link-box a {
+      display: inline-block;
+      background: #073B4C;
+      color: #e0e0e0;
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .link-box a:hover {
+      background: #0B6477;
+      color: #ffffff;
+    }
+
+    .footer {
+      background: #1e1e1e;
+      color: #b0b0b0;
+      text-align: center;
+      padding: 2rem 0;
+      margin-top: 2rem;
+      border-top: 1px solid #333;
+    }
+
+    .footer .social-links {
+      margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .footer .social-links a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #a8a8a8;
+      font-size: 1.1rem;
+      transition: all 0.3s;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+    }
+
+    .footer .social-links a:hover {
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .footer .social-links a i {
+      font-size: 1.3rem;
+    }
+
+    .fa-facebook {
+      color: rgba(66, 103, 178, 0.7);
+    }
+
+    .fa-youtube {
+      color: rgba(255, 0, 0, 0.7);
+    }
+
+    .footer p {
+      opacity: 0.7;
+      font-size: 0.9rem;
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .links-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .link-box {
+        width: 100%;
+        margin-bottom: 0;
+      }
+
+      .header h1 {
+        font-size: 1.8rem;
+      }
+
+      .footer .social-links {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <h1>أهلا بك في (دورة تقريب التحفة) للدكتور محمد شاهين </h1>
+    <p>المحاضرة الأولى (1)</p>
+  </header>
+
+  <div class="container">
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/cmn_mYh4VFo" allowfullscreen></iframe>
+    </div>
+
+    <p>للتسجيل في الدورة اضغط <a href="https://forms.gle/kAGjHdHBxrtFPGyR9" target="_blank"><strong>هنا</strong></a></p>
+
+    <div class="links-container">
+      <div class="link-box">
+        <a href="#" target="_blank">المحاضرة السابقة</a>
+      </div>
+
+      <div class="link-box">
+        <a href="https://drive.google.com/file/d/16Uj3a-WKp0r0B5mkssEM23pOSwTE7BLF/view?usp=drive_link" target="_blank">ملف المحاضرة</a>
+      </div>
+
+      <div class="link-box">
+        <a href="https://drive.google.com/file/d/1nf58E_AaszyK9YSw8Jt0IL8FDAcDeR4E/view?usp=drive_link" target="_blank">تفريغ كتابي للمحاضرة</a>
+      </div>
+
+      <div class="link-box">
+        <a href="https://drive.google.com/file/d/1Sv615vpZBitOdGkEi7L5yfCPF6Q7sa4Z/view?usp=drive_link" target="_blank">المحاضرة مسجلة</a>
+      </div>
+
+      <div class="link-box">
+        <a href="#" target="_blank">المحاضرة التالية</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="social-links">
+      <a href="https://www.facebook.com/share/16WKoqeQS6/" target="_blank" title="فيسبوك">
+        <i class="fab fa-facebook"></i><strong> Dr.Mohamed Shaheen</strong>
+      </a>
+      <a href="https://www.facebook.com/share/1G3qe5rLN5/" target="_blank" title="فيسبوك">
+        <i class="fab fa-facebook"></i> <strong>الصفحة الرئيسية</strong>
+      </a>
+      <a href="https://www.youtube.com/@MohamedShaheen79" target="_blank" title="يوتيوب">
+        <i class="fab fa-youtube"></i><strong> قناة اليوتيوب</strong>
+      </a>
+    </div>
+    <p>جميع الحقوق محفوظة &copy; 2025</p>
+  </footer>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</body>
+
+</html>
